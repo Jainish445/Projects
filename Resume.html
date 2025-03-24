@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jainish Patel - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+        }
+        .header {
+            background-color: #1b3b32;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            animation: fadeIn 2s;
+        }
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid white;
+            animation: bounce 1.5s infinite alternate;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            opacity: 0;
+            transform: translateY(50px);
+            animation: slideUp 1s forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes bounce {
+            from { transform: translateY(0); }
+            to { transform: translateY(-10px); }
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h2 {
+            color: #1b3b32;
+            border-bottom: 2px solid #1b3b32;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .progress-bar {
+            width: 100%;
+            background-color: #ddd;
+            border-radius: 5px;
+            margin-top: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+        .progress-bar div {
+            height: 10px;
+            border-radius: 5px;
+            background-color: #27ae60;
+            width: 0;
+            animation: fillBar 2s forwards;
+        }
+        @keyframes fillBar {
+            from { width: 0; }
+            to { width: var(--bar-width); }
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .footer {
+            text-align: center;
+            background-color: #1b3b32;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="profile">
+            <img src="c:\Users\Jainish Patel\Pictures\Saved Pictures\me.jpeg" alt="Jainish Patel">
+        </div>
+        <h1>Jainish Patel</h1>
+        <p>Sophomore | Computer Science Engineering</p>
+        <p>Email: jainishpatel445@gmail.com | Phone: 9687022818</p>
+    </div>
+    <div class="container">
+        <div class="section">
+            <h2>About Me</h2>
+            <p>Offering strong interpersonal and organizational skills, ready to learn and thrive in a dynamic environment. Brings solid understanding of computing principles and adept at programming and communication. Ready to use and develop problem-solving and analytical skills as an intern.</p>
+        </div>
+        <div class="section">
+            <h2>Education</h2>
+            <h3>Vellore Institute of Technology, Vellore</h3>
+            <p>Bachelor of Technology in Computer Science Engineering (2023 - 2027)</p>
+            <p>CGPA: 8.57</p>
+            <h3>Navrachana School, Sama, Vadodara</h3>
+            <p>High School Diploma (2011 - 2023)</p>
+            <p>AISSCE (Class XII): 87% | AISSE (Class X): 89%</p>
+        </div>
+        <div class="section">
+            <h2>Experience</h2>
+            <h3>Machine Learning Integration Project</h3>
+            <p>Currently working on a project involving ML integration to optimize various computational tasks.</p>
+            <h3>Society for Industrial and Applied Mathematics (SIAM)</h3>
+            <p>Active member, collaborating on various mathematical and computational research projects.</p>
+        </div>
+        <div class="section">
+            <h2>CGPA Details</h2>
+            <ul>
+                <li>GPA (1st Semester): 8.3</li>
+                <li>GPA (2nd Semester): 8.82</li>
+                <li>CGPA (1st Year): 8.56</li>
+                <li>GPA (3rd Semester): 8.58</li>
+                <li>CGPA (3rd Semester): 8.57</li>
+            </ul>
+        </div>
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>Python <div class="progress-bar"><div style="--bar-width: 90%;"></div></div></li>
+                <li>Java <div class="progress-bar"><div style="--bar-width: 85%;"></div></div></li>
+                <li>C, C++ <div class="progress-bar"><div style="--bar-width: 80%;"></div></div></li>
+                <li>HTML, CSS, JavaScript <div class="progress-bar"><div style="--bar-width: 75%;"></div></div></li>
+                <li>MATLAB, RStudio <div class="progress-bar"><div style="--bar-width: 70%;"></div></div></li>
+                <li>Keil µVision, ModelSim, ORCAD <div class="progress-bar"><div style="--bar-width: 65%;"></div></div></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Languages</h2>
+            <ul>
+                <li>English <div class="progress-bar"><div style="--bar-width: 95%;"></div></div></li>
+                <li>Hindi <div class="progress-bar"><div style="--bar-width: 90%;"></div></div></li>
+                <li>Gujarati <div class="progress-bar"><div style="--bar-width: 85%;"></div></div></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p>Email: jainishpatel445@gmail.com</p>
+                <p>Phone: 9687022818</p>
+                <p><a href="https://www.linkedin.com/in/jainish-patel-60a20b286/">LinkedIn Profile</a></p>
+            </div>
+        </section>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 Jainish Patel. All rights reserved.</p>
+    </div>
+</body>
+</html>
+
+
